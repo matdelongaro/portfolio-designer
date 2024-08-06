@@ -5,34 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/index.js" defer></script>
     <title>Matías Delóngaro | Diseño Web</title>
 </head>
 <body>
     <div class="contenedor">
-        <header class="flex flex-col justify-between text-zinc-200 bg-zinc-700 md:h-screen">
+        <header class="flex flex-col justify-between text-zinc-200 bg-zinc-700 md:min-h-screen">
             <nav class="flex flex-col justify-between p-4 uppercase md:flex-row ">
                 <div class="flex items-center py-3 w-30">
                     <img src="./img/_MG_6100-Editar.jpg" alt="" class="object-contain w-12 rounded-full">
                     <p class="pl-3">MATÍAS DELÓNGARO</p>
                 </div>
                 
-                <ul class="flex flex-col items-center md:flex-row">
+                <ul class="flex flex-col items-center md:flex-row" id="navBar">
                     <li class="p-3"><a href="#inicio">Inicio</a></li>
                     <li class="p-3 "><a href="#sobreMi">Sobre mi</a></li>
                     <li class="p-3"><a href="#misProyectos">Mis proyectos</a></li>
                     <li class="p-3"><a href="#contacto">Contacto</a></li>
                 </ul>
-                <div class="nav_toggle">
+                <div class="nav_toggle" id="menuIcono">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 
             </nav>
-            <div class="flex flex-col items-center mb-20 justify-evenly bg-zinc-700 text-zinc-100 md:h-1/2">
+            <div class="flex flex-col items-center mb-20 justify-evenly bg-zinc-700 text-zinc-100 md:min-h-1/2">
                 <h1 class="p-3 my-3 text-4xl font-bold text-center uppercase">Hola, Soy Matías Delóngaro</h1>
                 <p class="w-3/4 p-3 my-3 text-2xl text-center">Un desarrollador web orientado a resultados que crea y administra sitios web y aplicaciones web que conducen al éxito del producto en general.</p>
-                <a href="#" class="px-8 py-3 bg-yellow-300 text-zinc-700">Mis proyectos</a>
+                <a href="#misProyectos" class="px-8 py-3 bg-yellow-300 text-zinc-700">Mis proyectos</a>
             </div>
             
         
@@ -41,7 +42,7 @@
             
         </header>
         <main>
-            <section class="h-auto px-10 bg-zinc-100" id="sobreMi">
+            <section class="px-10 bg-zinc-100" id="sobreMi">
                 <div class="py-6 text-zinc-700">
                     <h2 class="mb-6 text-4xl text-center uppercase ">Sobre mi</h2>
                     <div class="w-16 mx-auto border-t-4 border-yellow-300"></div>
@@ -59,7 +60,7 @@
                     </div>
                     <div class="flex flex-col items-center py-6 md:items-start">
                         <h3 class="px-3 mb-4 text-3xl text-zinc-700 ">My Skills</h3>
-                        <div class="flex flex-wrap items-center gap-4">
+                        <div class="flex flex-wrap items-center justify-center gap-4">
                             <div class="w-auto p-3 text-center rounded bg-zinc-300 text-zinc-800">HTML</div>
                             <div class="w-auto p-3 text-center rounded bg-zinc-300 text-zinc-800">CSS</div>
                             <div class="p-3 text-center rounded bg-zinc-300 text-zinc-800">Javascript</p></div>
@@ -79,7 +80,7 @@
                 
                    
             </section>
-            <section class="h-screen px-10 bg-zinc-50" id="misProyectos">
+            <section class="min-h-screen px-10 bg-zinc-50" id="misProyectos">
                 <div class="py-6 text-zinc-700">
                     <h2 class="mb-6 text-4xl text-center uppercase">Mis proyectos</h2>
                     <div class="w-16 mx-auto border-t-4 border-yellow-300"></div>
@@ -97,13 +98,13 @@
                 
                    
             </section>
-            <section class="h-auto px-10 bg-zinc-200" id="contacto">
+            <section class="px-10 bg-zinc-200" id="contacto">
                 <div class=" text-zinc-700">
-                    <h2 class="mb-6 text-4xl text-center uppercase">Contacto</h2>
+                    <h2 class="py-6 mb-6 text-4xl text-center uppercase">Contacto</h2>
                     <div class="w-16 mx-auto border-t-4 border-yellow-300"></div>
                     <p class="py-6 text-center">No dude en ponerse en contacto conmigo enviando el formulario a continuación y me pondré en contacto con usted lo antes posible.</p>
                 </div>
-                <div class="w-3/5 py-6 mx-auto">
+                <div class="w-full py-6 mx-auto md:w-3/5 ">
                     
                     <form action="your-server-side-script" method="post" class="flex flex-col gap-3 p-5 rounded-sm bg-zinc-50">
                         <label for="name" >Nombre:</label>
@@ -122,7 +123,7 @@
                 
                    
             </section>
-            
+            <a href="#"><img src="./img/flecha-hacia-arriba.png" alt="" class="fixed w-10 p-3 border-2 border-solid bottom-10 right-10 bg-zinc-100 border-zinc-700"></a> 
         </main>
     
     
