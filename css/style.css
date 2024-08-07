@@ -34,7 +34,10 @@ nav{
 
 .nav-items{
     display: flex;
+    
 }
+
+
 
 .nav_toggle{
     padding: 0.5 rem;
@@ -56,6 +59,12 @@ nav{
     transition: all 0.2s linear;
 }
 
+.tracking-in-expand{-webkit-animation:tracking-in-expand 2s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand 2s cubic-bezier(.215,.61,.355,1.000) both}
+
+
+ @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+ 
 @media (max-width : 768px){
 
     #navBar{
@@ -72,7 +81,9 @@ nav{
         width: 70%;
         height: 100vh;
         background-color: rgb(24 24 27);
-       transition: 0.9s;
+        z-index: 999;
+        
+    
     }
     .nav_toggle{
         display: flex;

@@ -5,5 +5,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
 menuIcon.addEventListener("click", function(){
     menu.classList.toggle('active');
+    
 });
 })
