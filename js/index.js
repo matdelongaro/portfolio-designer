@@ -5,11 +5,19 @@ document.addEventListener('DOMContentLoaded', function(){
     const menu = document.getElementById("navBar")
 
 
-menuIcon.addEventListener("click", function(){
-    menu.classList.toggle('active');
+menuIcon.addEventListener("click", function(e){
+        e.stopPropagation();
+        menu.classList.toggle('active')
+    }); 
     
+    document.addEventListener("click", function(e){
+        if(menu.classList.contains('active') && !menu.contains(e.target) && e.target !== menuIcon){
+            menu.classList.remove('active')
+        }
+    })
+
 });
-})
+
 const formulario = document.querySelector('#formulario')
 
 const procesaTodo = (event) =>{
